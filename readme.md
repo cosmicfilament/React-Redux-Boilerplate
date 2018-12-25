@@ -8,7 +8,7 @@ There are 2 index_xxx.js files under src. One is for a react application and the
 
 All the necessary modules for either application type should be in the package.json file.
 
-## Background
+## Additional Verbiage
 
 I have borrowed techniques and ideas from a few articles that I have read which have helped me a lot, and which are listed below:
 
