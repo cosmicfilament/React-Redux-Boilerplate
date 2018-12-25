@@ -1,0 +1,15 @@
+body{
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: DodgerBlue;
+    margin: 0;
+    text-align: center;
+}
+
+.ziggy-image{
+    height: 150px;
+    width: auto;
+    background-image: url(../public/img/ziggy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
