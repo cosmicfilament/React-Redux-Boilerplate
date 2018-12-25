@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-framework",
+  "name": "react-redux-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate framework for creating a react redux app.",
+  "description": "Boilerplate for creating a react redux app.",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cosmicfilament/React-Redux-Framework.git"
+    "url": "git+https://github.com/cosmicfilament/React-Redux-Boilerplate.git"
   },
   "keywords": [
     "react",
@@ -23,11 +23,11 @@
   "author": "John P. Butler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cosmicfilament/React-Redux-Framework/issues"
+    "url": "https://github.com/cosmicfilament/React-Redux-Boilerplate/issues"
   },
-  "homepage": "https://github.com/cosmicfilament/React-Redux-Framework#readme",
+  "homepage": "https://github.com/cosmicfilament/React-Redux-Boilerplate#readme",
   "jest": {
-    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
+    "setupTestboilerplateScriptFile": "./test/enzyme.setup.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -70,6 +70,7 @@
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   }
 }
