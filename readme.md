@@ -8,8 +8,6 @@ There are 2 index_xxx.js files under src. One is for a react application and the
 
 All the necessary modules for either application type should be in the package.json file.
 
-This is a work in progress. Hot module replacement and live loading is working in the development configuration of webpack. I have yet to include a production configuration, though.
-
 ## Background
 
 I have borrowed techniques and ideas from a few articles that I have read which have helped me a lot, and which are listed below:
