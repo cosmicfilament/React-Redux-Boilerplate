@@ -1,1 +1,5 @@
-// combine the store/{domain}/reducer.js functions here
+const func = (state = [], action = {}) => { return state; }
+
+export {
+    func
+};

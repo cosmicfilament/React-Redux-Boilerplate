@@ -1,17 +1,16 @@
-import React from 'react';
-import Ziggy from './components/ziggy';
-import './styles/styles.scss'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-class App extends React.Component {
+class App extends Component {
 
     render() {
         return (
             <div>
                 <h1>React Redux Boilerplate</h1>
-                <Ziggy />
             </div>
         );
     }
 }
 
+//export default connect(mapStateToProps)(App);
 export default App;
