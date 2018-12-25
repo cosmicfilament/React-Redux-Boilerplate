@@ -1,4 +1,4 @@
-# React-Redux-Framework
+# React-Redux-Boilerplate
 
 ## Setup
 
