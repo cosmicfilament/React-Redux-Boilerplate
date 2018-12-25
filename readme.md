@@ -31,8 +31,15 @@ I have also liberally copied his directory structure for my use and it is repres
 <img src="https://cdn-images-1.medium.com/max/1000/1*9kbmrgH8voxp_rx25LPqIw.png"
 alt="react-redux-flow" />
 
-**Rule: Smart components are not allowed to have any logic except dispatching actions.**
+## Tal's Opinionated Redux Rules. I have no opinion on them, yet.
 
-**Rule: Services must be completely stateless.**
+**App state is a first class citizen, structure it like an in-memory database.**
+**Smart components are not allowed to have any logic except dispatching actions.**
 
-**Rule: Smart components should always access state through selectors.**
+**Services must be completely stateless.**
+
+**Smart components should always access state through selectors.**
+
+**Minimize view logic in smart components by extracting it into dumb components.**
+
+**Place all business logic inside action handlers (thunks), selectors and reducers.**
