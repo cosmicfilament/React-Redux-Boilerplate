@@ -1,11 +1,13 @@
 {
   "name": "react-redux-boilerplate",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Boilerplate for creating a react redux app.",
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode=development",
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --open --mode=development --env.dev",
+    "prod": "webpack --mode=production --env.prod",
     "test": "jest ./test"
   },
   "repository": {
@@ -36,7 +38,6 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.2.0",
-    "acorn": "^6.0.4",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.0.2",
@@ -51,7 +52,6 @@
     "jest": "^23.6.0",
     "node-sass": "^4.11.0",
     "optipng": "^2.0.0",
-    "raf": "^3.4.1",
     "react-hot-loader": "^4.5.3",
     "react-test-renderer": "^16.7.0",
     "sass-loader": "^7.1.0",
