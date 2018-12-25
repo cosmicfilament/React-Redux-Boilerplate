@@ -4,8 +4,8 @@ import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
-import App from './components/App';
-import reducers from './state/rootReducer';
+import App from './App';
+import reducers from './store/reducers';
 
 const createStorewithMiddleware = applyMiddleware()(createStore);
 
@@ -18,7 +18,7 @@ render(
 );
 
 if (module.hot) {
-    module.hot.accept('./components/App', () => {
+    module.hot.accept('./App', () => {
         render(
             <Provider store={createStorewithMiddleware(reducers)}>
                 <AppContainer>

@@ -1,6 +1,6 @@
 import React from 'react';
-import Ziggy from './ziggy';
-import '../styles/styles.scss'
+import Ziggy from './components/ziggy';
+import './styles/styles.scss'
 
 class App extends React.Component {
 

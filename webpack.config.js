@@ -28,8 +28,6 @@ module.exports = {
                     loader: 'babel-loader'
                 }],
                 include: [
-                    path.resolve(__dirname, 'components'),
-                    path.resolve(__dirname, 'state'),
                     path.resolve(__dirname, 'src')
                 ]
             },
