@@ -15,9 +15,9 @@ I have borrowed techniques and ideas from a few articles that I have read which 
 
 [How to build your own React boilerplate with webpack 4 & Babel 7 by Seth Alexander](https://medium.com/@sethalexander/how-to-build-your-own-react-boilerplate-1a97d09337fd)
 
-**Note:** I started out using his config file as a template but have many modifications to it since.
+**Note:** I started out using his config file as a template but have made many modifications to it since.
 
-I have added hot module replacement and live loading. In addtion I added support for files and images in webpack. There is also, now a production configuration which is pretty bare as webpack's defaults seem to be pretty good. The webpack config is broken down into separate modules which is a technique that I kind of like and learned from an inexpensive kindle book: "SurviveJS Webpack From Apprentice to Master" by Juo Vepsäläinen.
+My main contributions are adding hot module replacement and live loading. In addition I have added rules for fonts and images in webpack. The production configuration is pretty bare as webpack's defaults seem to be pretty good. The webpack config is broken down into separate modules which is a technique that I kind of like and learned from an inexpensive kindle book: "SurviveJS Webpack From Apprentice to Master" by Juo Vepsäläinen.
 
 [Getting Started with Redux by David Abramov](https://egghead.io/courses/getting-started-with-redux)
 
