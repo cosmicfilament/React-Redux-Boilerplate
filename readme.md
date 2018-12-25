@@ -3,7 +3,12 @@
 ## Setup
 
 npm install
-There are 2 index.js files pick which one you want to use and rename it to index.js.
+
+There are 2 index_xxx.js files under src. One is for a react application and the other is for a react-redux application. Pick which one you want to use and rename it to index.js.
+
+All the necessary modules for either application type should be in the package.json file.
+
+This is a work in progress. Hot module replacement and live loading is working in the development configuration of webpack. I have yet to include a production configuration, though.
 
 ## Background
 
@@ -15,7 +20,7 @@ I have borrowed techniques and ideas from a few articles that I have read and th
 [Getting Started with Redux by David Abramov](https://egghead.io/courses/getting-started-with-redux)
 
 [Redux Step by Step: A simple and Robust Workflow for Real Life Apps by Tal Kol](https://hackernoon.com/redux-step-by-step-a-simple-and-robust-workflow-for-real-life-apps-1fdf7df46092).
-The diagrams below are from Tal's hackernoon article as well as the directory structure that I am using in this boilerplate:
+The diagram below, which is very helpful is from Tal's hackernoon article as well as the directory structure that I am using in this boilerplate:
 
 <hr />
 
