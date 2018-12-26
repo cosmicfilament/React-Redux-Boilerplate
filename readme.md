@@ -65,8 +65,10 @@ Place all business logic inside action handlers (thunks), selectors and reducers
 Application state is the domain of Redux and UI state is the domain of React.<sup><span style="font-size:0.6em">(3)</span></sup>
 
 <hr />
+<small>Footnotes:
+
 <span style="font-size:0.6em">1. Some of these are taken from a Udacity course on React and redux that I took. Some are probably from react and redux documentation. I will footnote the ones that I am sure come from a specific individual.</span>
 
 <span style="font-size:0.6em">2. Dan Abramov</span>
 
-<span style="font-size:0.6em">3. Tal Kol</span>
+<span style="font-size:0.6em">3. Tal Kol</span></small>
