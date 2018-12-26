@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "",
   "version": "0.1.0",
-  "description": "Boilerplate for creating a react redux app.",
+  "description": "",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cosmicfilament/React-Redux-Boilerplate.git"
+    "url": "git+your repo here"
   },
   "keywords": [
     "react",
@@ -24,9 +24,9 @@
   "author": "John P. Butler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cosmicfilament/React-Redux-Boilerplate/issues"
+    "url": "your repo here"
   },
-  "homepage": "https://github.com/cosmicfilament/React-Redux-Boilerplate#readme",
+  "homepage": ".",
   "jest": {
     "setupTestboilerplateScriptFile": "./test/enzyme.setup.js"
   },
