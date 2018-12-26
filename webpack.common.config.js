@@ -14,7 +14,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: 'http://localhost:3000/'
+        publicPath: '/'
     },
     target: 'web',
     module: {
@@ -53,7 +53,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: path.resolve(__dirname, './src/public/index.html')
+            template: path.resolve(__dirname, './src/public/index.html'),
+            favicon: path.resolve(__dirname, './src/public/favicon.ico')
         }),
         new CleanWebPackPlugin([path.resolve(__dirname, 'dist')]),
         new webpack.HotModuleReplacementPlugin()
