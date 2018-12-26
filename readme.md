@@ -25,12 +25,12 @@ The diagram below is from Tal's hackernoon article. I have included the diagram 
 
 I have also liberally copied his directory structure for my use and it is represented in this boilerplate. As time goes along, I might modify it as I gain more experience, but for now I will keep it as it is.
 
-<hr />
+---
 
 <img src="https://cdn-images-1.medium.com/max/1000/1*9kbmrgH8voxp_rx25LPqIw.png"
 alt="react-redux-flow" />
 
-<hr />
+---
 
 ## Rules and principles associated with React and Redux
 
@@ -50,8 +50,6 @@ To specify how the state tree is transformed by actions, you write pure reducers
 
 ### React-Redux rules and suggestions gathered from the cosmic filament. <sup><span style="font-size:0.6em">(1)</span></sup>
 
-This one is mine: A component should do no evil. Bwahahahahha ;0}
-
 A component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents.
 
 Use Redux for state that matters globally or is mutated in complex ways... **The rule of thumb is do whatever is less awkward.** <sup><span style="font-size:0.6em">(2)</span></sup>
@@ -64,11 +62,12 @@ Place all business logic inside action handlers (thunks), selectors and reducers
 
 Application state is the domain of Redux and UI state is the domain of React.<sup><span style="font-size:0.6em">(3)</span></sup>
 
-<hr />
-<small>Footnotes:
+---
 
-<span style="font-size:0.6em">1. Some of these are taken from a Udacity course on React and redux that I took. Some are probably from react and redux documentation. I will footnote the ones that I am sure come from a specific individual.</span>
+<sup><span style="font-size:0.6em">Footnotes:</span></sup>
 
-<span style="font-size:0.6em">2. Dan Abramov</span>
+<sup><span style="font-size:0.6em">1. Some of these are taken from a Udacity course on React and redux that I took. Some are probably from react and redux documentation. I will footnote the ones that I am sure come from a specific individual.</span></sup>
 
-<span style="font-size:0.6em">3. Tal Kol</span></small>
+<sup><span style="font-size:0.6em">2. Dan Abramov</span></sup>
+
+<sup><span style="font-size:0.6em">3. Tal Kol</span></sup>
