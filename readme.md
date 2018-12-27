@@ -48,7 +48,7 @@ The only way to change state is to emit an **action**, an object describing what
 
 To specify how the state tree is transformed by actions, you write pure reducers (pure functions).
 
-### React-Redux rules and suggestions gathered from the cosmic filament. <sup><span style="font-size:0.6em">(1)</span></sup>
+### React-Redux rules and suggestions gathered from the cosmic filament. <sup><span style="font-size:0.5em">(1)</span></sup>
 
 A component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents.
 
@@ -56,11 +56,14 @@ Use Redux for state that matters globally or is mutated in complex ways... **The
 
 If you are going to use Redux, embrace the single state tree. Put UI state there as well, unless it becomes awkward. <sup><span style="font-size:0.6em">(2)</span></sup>
 
+Regarding thunk middleware: The middleware will call that function with dispatch method itself as the first argument...The action will only reach the reducers once the API request is completed. It will also “swallow” such actions so don't worry about your reducers receiving weird function arguments. Your reducers will only receive plain object actions—either emitted directly, or emitted by the functions as we just described. <sup><span style="font-size:0.6em">(2)</span></sup>
+
 Minimize view logic in smart components by extracting it into dumb components. <sup><span style="font-size:0.6em">(3)</span></sup>
 
 Place all business logic inside action handlers (thunks), selectors and reducers.<sup><span style="font-size:0.6em">(3)</span></sup>
 
 Application state is the domain of Redux and UI state is the domain of React.<sup><span style="font-size:0.6em">(3)</span></sup>
+
 
 ---
 
