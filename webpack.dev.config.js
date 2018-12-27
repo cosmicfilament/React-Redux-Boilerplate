@@ -2,6 +2,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.config');
 const path = require('path');
 
+// devServer is a webpack server that lets you run your front end web code live
 module.exports = merge(common, {
     name: 'webpack.dev.config',
     devtool: 'inline-source-map',

@@ -11,6 +11,6 @@ class App extends Component {
         );
     }
 }
-
+// uncomment as necessary
 //export default connect(mapStateToProps)(App);
 export default App;

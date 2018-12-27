@@ -1,1 +1,1 @@
-placeholder so that the directory is not deleted
+UI components, dumb components, don't connect to redux and basically just render UI
