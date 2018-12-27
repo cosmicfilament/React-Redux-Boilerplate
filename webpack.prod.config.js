@@ -3,12 +3,20 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.config');
 const CleanWebPackPlugin = require('clean-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 
 module.exports = merge(common, {
     name: 'webpack.prod.config',
     performance: {
         hints: 'warning'
+    },
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin({
+                test: /\.js(\?.*)?$/i,
+            }),
+        ],
     },
     output: {
         // in development mode the bundle is kept in memory
