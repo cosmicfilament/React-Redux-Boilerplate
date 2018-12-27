@@ -1,11 +1,9 @@
 'use strict';
 
 // common logic between the prod and dev configs
-
-const CleanWebPackPlugin = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
     name: 'webpack.commmon.config',
@@ -13,13 +11,6 @@ module.exports = {
         './src/index.js',
         './src/public/index.html'
     ],
-    output: {
-        // in development mode the bundle is really kept in memory and you won't seen anything written to the directory
-        // in production the code is minified and placed in the dist subdirectory.
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
-        publicPath: '/'
-    },
     target: 'web',
     module: {
         rules: [
@@ -59,8 +50,6 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: path.resolve(__dirname, './src/public/index.html'),
             favicon: path.resolve(__dirname, './src/public/favicon.ico')
-        }),
-        new CleanWebPackPlugin([path.resolve(__dirname, 'dist')]),
-        new webpack.HotModuleReplacementPlugin()
-    ],
+        })
+    ]
 };

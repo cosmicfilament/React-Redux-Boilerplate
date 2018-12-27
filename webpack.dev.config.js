@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.config');
 const path = require('path');
@@ -16,4 +17,7 @@ module.exports = merge(common, {
         hot: true,
         disableHostCheck: true,
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
 });
