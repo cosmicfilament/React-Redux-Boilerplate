@@ -28,7 +28,7 @@
   },
   "homepage": ".",
   "jest": {
-    "setupTestboilerplateScriptFile": "./test/enzyme.setup.js"
+    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -39,6 +39,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.2.0",
     "acorn": "^6.0.4",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.0.2",
@@ -52,7 +53,6 @@
     "imagemin": "^5.3.1",
     "img-loader": "^3.0.1",
     "jest": "^23.6.0",
-    "node-sass": "^4.11.0",
     "optipng": "^2.0.0",
     "react-hot-loader": "^4.5.3",
     "react-test-renderer": "^16.7.0",
