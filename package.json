@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "webpack-dev-server --open --mode=development --env.dev",
+    "dev": "webpack-dev-server --mode=development --env.dev",
     "prod": "webpack --mode=production --env.prod",
     "test": "jest ./test"
   },

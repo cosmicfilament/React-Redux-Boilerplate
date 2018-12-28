@@ -8,13 +8,13 @@ module.exports = merge(common, {
     name: 'webpack.dev.config',
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
         compress: true,
         watchContentBase: true,
         historyApiFallback: true,
         host: 'localhost',
         port: 3000,
         hot: true,
+        open: true,
         disableHostCheck: true,
     },
     plugins: [

@@ -2,10 +2,10 @@
 
 // common logic between the prod and dev configs
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-
+const merge = require('webpack-merge');
 const path = require('path');
 
-module.exports = {
+module.exports = merge({
     name: 'webpack.commmon.config',
     entry: [
         './src/index.js',
@@ -52,4 +52,4 @@ module.exports = {
             favicon: path.resolve(__dirname, './src/public/favicon.ico')
         })
     ]
-};
+});
