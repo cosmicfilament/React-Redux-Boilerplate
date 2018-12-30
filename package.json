@@ -7,8 +7,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --mode=development --env.dev",
-    "prod": "webpack --mode=production --env.prod",
-    "test": "jest ./test"
+    "prod": "webpack --mode=production --env.prod"
   },
   "repository": {
     "type": "git",
@@ -26,10 +25,6 @@
   "bugs": {
     "url": "your repo here"
   },
-  "homepage": ".",
-  "jest": {
-    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
-  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
@@ -39,7 +34,6 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.2.0",
     "acorn": "^6.0.4",
-    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.0.2",
@@ -52,7 +46,6 @@
     "html-webpack-plugin": "^3.2.0",
     "imagemin": "^5.3.1",
     "img-loader": "^3.0.1",
-    "jest": "^23.6.0",
     "optipng": "^2.0.0",
     "react-hot-loader": "^4.5.3",
     "react-test-renderer": "^16.7.0",
@@ -67,6 +60,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",

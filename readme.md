@@ -16,8 +16,6 @@ All the necessary modules for either application type should be in the package.j
 
 There is a suggested directory structure for the application but it is just there as a convenience.
 
-I am unable to run the jest test script unless I monkey patch the jest index.js file in node_modules. It is loading babel-core instead of @babel/core. Don't really know how to get around this. So to fix this issue open node_modules/babel-jest/build/index.js and find the string: babel-core. Change it to @babel/core and you are good to go.
-
 ## Sources
 
 I have borrowed techniques and ideas from a few articles that I have read which have helped me a lot, and which are listed below.
