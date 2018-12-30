@@ -29,6 +29,16 @@ module.exports = merge({
                 loaders: ["style-loader", "css-loader"],
             },
             {
+                test: /\.s(a|c)ss$/,
+                use: [{
+                    loader: 'style-loader'
+                }, {
+                    loader: 'css-loader'
+                }, {
+                    loader: 'sass-loader'
+                }],
+            },
+            {
                 test: /\.html$/,
                 loader: 'html-loader'
             },
@@ -49,7 +59,7 @@ module.exports = merge({
     plugins: [
         new HtmlWebPackPlugin({
             template: path.resolve(__dirname, './src/public/index.html'),
-            favicon: path.resolve(__dirname, './src/public/favicon.ico')
+            favicon: path.resolve(__dirname, './src/images/favicon.ico')
         })
     ]
 });

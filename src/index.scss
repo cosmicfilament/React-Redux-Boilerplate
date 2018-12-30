@@ -1,0 +1,12 @@
+$primary-font-family: 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif;
+$primary-background-color: DodgerBlue;
+$primary-color: white;
+
+body{
+    font-family: $primary-font-family;
+    color: $primary-color;
+    background: $primary-background-color;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
