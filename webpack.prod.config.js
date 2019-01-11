@@ -22,8 +22,7 @@ module.exports = merge(common, {
         // in development mode the bundle is kept in memory
         // in production the code is minified and placed in the dist subdirectory.
         filename: 'bundle.js',
-        path: path.resolve('dist'),
-        //publicPath: '.'
+        path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
         new CleanWebPackPlugin([path.resolve(__dirname, 'dist')])

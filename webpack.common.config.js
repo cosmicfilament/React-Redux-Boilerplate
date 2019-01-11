@@ -2,26 +2,35 @@
 
 // common logic between the prod and dev configs
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 const merge = require('webpack-merge');
 const path = require('path');
 
+console.log(path.resolve(__dirname, 'src', 'index.js'));
+
 module.exports = merge({
     name: 'webpack.commmon.config',
+    context: path.resolve(__dirname, 'src'),
     entry: [
-        './src/index.js',
-        './src/public/index.html'
+        './index.js',
+        './public/index.html',
     ],
     target: 'web',
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                exclude: [path.resolve(__dirname, 'node_modules')],
+                exclude: [
+                    path.resolve(__dirname, 'node_modules')
+                ],
                 use: [{
-                    loader: 'babel-loader'
+                    loader: 'babel-loader',
+                    options: {
+                        configFile: path.resolve(__dirname, '.babelrc'),
+                    }
                 }],
                 include: [
-                    path.resolve(__dirname, 'src')
+                    path.resolve(__dirname, './src')
                 ]
             },
             {
@@ -52,14 +61,20 @@ module.exports = merge({
                     {
                         loader: 'url-loader'
                     }
+                ],
+                include: [
+                    path.resolve('./src/images')
                 ]
             }
         ]
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: path.resolve(__dirname, './src/public/index.html'),
-            favicon: path.resolve(__dirname, './src/images/favicon.ico')
+            template: './public/index.html',
+            favicon: './images/favicon.ico'
+        }),
+        new ManifestPlugin({
+            fileName: 'manifest.json',
         })
     ]
 });

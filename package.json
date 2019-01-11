@@ -35,6 +35,7 @@
     "@babel/runtime": "^7.2.0",
     "acorn": "^6.0.4",
     "babel-loader": "^8.0.4",
+    "browserlist": "^1.0.1",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.0.2",
     "eslint": "^5.10.0",
@@ -53,18 +54,29 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.11",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-manifest-plugin": "^2.0.4",
     "webpack-merge": "^4.1.5",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "webpackbar": "^3.1.4"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
+    "classnames": "^2.2.6",
+    "lodash.throttle": "^4.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-icons": "^3.2.2",
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 5% in US",
+    "maintained node versions",
+    "not dead"
+  ]
 }
